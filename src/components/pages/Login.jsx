@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
 import CheckButton from 'react-validation/build/button';
-import LoginButton from './GoogleButton/LoginButton';
 
 const required = (value) => {
   if (!value) {
@@ -54,7 +53,6 @@ export default function Login() {
               <button className="btn btn-primary w-100 mt-3">
                 <span>Sign In</span>
               </button>
-              <LoginButton />
               <Link className="btn w-100 mt-2" to={'/register'}>
                 Don't have an account? Register!
               </Link>
